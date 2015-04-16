@@ -1,1 +1,14 @@
-
+.social-btn {
+  display: inline-block; 
+  padding: 10px 10px 10px 10px;
+  border: .094em solid #743EA5; 
+  border-radius: .625em;
+  background-color: #FF6A42;
+  box-shadow: 0 .375em .313em -0.313em rgba(0,0,0,.8), inset 0 .063em rgba(255,255,255,.4), inset 0 -0.188em rgba(0,0,0,.15);
+  color: #FFF;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-shadow: 0 .063em #000;
+  cursor:pointer;
+  font: bold 1.8rem sans-serif;
+}
