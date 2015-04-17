@@ -1,4 +1,6 @@
 source 'https://rubygems.org'
+#adding pry-rails
+gem 'pry-rails'
 
 #adding twitter bootstrap to the application
 gem 'bootstrap-sass'
@@ -26,6 +28,10 @@ gem 'coffee-rails', '~> 4.1.0'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
+
+#Use faker to seed data
+gem 'faker'
+
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
