@@ -65,5 +65,8 @@ group :development, :test do
 
   # Add Figaro to handle secure variables
   gem 'figaro', '1.0'
+
+  # Add Pundit to handle user authorization
+  gem 'pundit'
 end
 
