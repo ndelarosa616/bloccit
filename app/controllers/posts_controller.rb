@@ -17,7 +17,7 @@ class PostsController < ApplicationController
 
   def create
     @topic = Topic.find(params[:topic_id])
-    @post = current_user.posts.build(params.require(post_params)
+    @post = current_user.posts.build(params.require(post_params))
     authorize @post
     if @post.save
       flash[:notice] = "Post was saved."
@@ -38,7 +38,7 @@ class PostsController < ApplicationController
     @topic = Topic.find(params[:topic_id])
     @post = Post.find(params[:id])
     authorize @post
-    if @post.update_attributes(params.require(post_params)
+    if @post.update_attributes(params.require(post_params))
       flash[:notice] = "Post was updated."
       redirect_to [@topic, @post]
     else
