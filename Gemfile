@@ -44,6 +44,9 @@ end
 # add devise gem for user authentication
 gem 'devise'
 
+# Add Pundit to handle user authorization
+gem 'pundit'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -66,7 +69,5 @@ group :development, :test do
   # Add Figaro to handle secure variables
   gem 'figaro', '1.0'
 
-  # Add Pundit to handle user authorization
-  gem 'pundit'
 end
 
