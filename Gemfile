@@ -47,6 +47,9 @@ gem 'devise'
 # Add Pundit to handle user authorization
 gem 'pundit'
 
+# Add Redcarpet to allow for markdown in Posts
+gem 'redcarpet'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
