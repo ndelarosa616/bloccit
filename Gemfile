@@ -81,5 +81,11 @@ group :development, :test do
   # Add Figaro to handle secure variables
   gem 'figaro', '1.0'
 
+  # Add Binding_of_Caller for better debugging
+  gem 'binding_of_caller'
+
+  # Add better errors gem to debug better
+  gem 'better_errors'
+
 end
 
