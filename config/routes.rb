@@ -4,11 +4,9 @@ Rails.application.routes.draw do
   resources :users, only: [:update]
 
   resources :topics do
-    resources :posts, except: [:index] 
-  end
-
-  resources :posts, only: [:index] do
-    resources :comments, only: [:create]
+    resources :posts, except: [:index] do
+      resources :comments, only: [:create, :destroy]
+    end
   end
 
   get 'about' => 'welcome#about'
