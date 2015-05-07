@@ -87,5 +87,7 @@ group :development, :test do
   # Add better errors gem to debug better
   gem 'better_errors'
 
+  # Add rspec for testing
+  gem 'rspec-rails', '~> 3.0'
 end
 
