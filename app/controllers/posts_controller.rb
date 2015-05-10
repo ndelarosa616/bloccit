@@ -35,8 +35,6 @@ class PostsController < ApplicationController
     @topic = Topic.find(params[:topic_id])
     @post = Post.find(params[:id])
     authorize @post
-    authorize @comment
-    authorize @new_comment
   end
 
   def update
@@ -69,7 +67,7 @@ end
 private
 
 def post_params
-  params.require(:post).permit(:title, :body)
+  params.require(:post).permit(:title, :body, :image)
 end
 
 
