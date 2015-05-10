@@ -36,7 +36,9 @@
     </div>
   </div>
     <div class='new-comment'>
-      <%= render 'comments/form', :comment => @comment %>    
+      <% if policy(@comments).create? %>
+        <%= render 'comments/form', :comment => @comment %>   
+      <% end %> 
     </div>
   </div>
 </div>
