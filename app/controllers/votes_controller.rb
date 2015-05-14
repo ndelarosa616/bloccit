@@ -1,4 +1,5 @@
 class VotesController < ApplicationController
+
   before_action :load_post_and_vote
 
   def up_vote
@@ -29,10 +30,3 @@ class VotesController < ApplicationController
     end
   end
 end
-
-
-
-
-
-
-
