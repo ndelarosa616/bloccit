@@ -1,6 +1,6 @@
 class TopicsController < ApplicationController
   def index
-    @topics = Topic.paginate(page: params[:page], per_page: 10)
+    @topics = Topic.visible_to(current_user).paginate(page: params[:page], per_page: 10)
     authorize @topics
   end
 
@@ -21,7 +21,7 @@ class TopicsController < ApplicationController
   end
 
   def create
-    @topic = Topic.new(params.require(:topic).permit(topic_params))
+    @topic = Topic.new(topic_params)
     authorize @topic
 
     if @topic.save
@@ -37,7 +37,7 @@ class TopicsController < ApplicationController
     @topic = Topic.find(params[:id])
     authorize @topic
 
-    if @topic.update_attributes(params.require(:topic).permit(topic_params))
+    if @topic.update_attributes(topic_params)
       flash[:notice] = "Topic was updated."
       redirect_to @topic
     else
