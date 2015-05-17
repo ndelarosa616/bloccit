@@ -70,7 +70,7 @@ gem 'will_paginate', '~> 3.0.5'
 
 group :development, :test do
   # Add Factory_girl for factory
-  gem 'factory_girl_rails'
+  gem 'factory_girl_rails', '~> 4.0'
 
   # Add Capybara for testing 
   gem 'capybara'
