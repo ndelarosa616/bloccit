@@ -59,9 +59,6 @@ gem 'fog'
 # Add will_paginate to handle pages in topics and posts
 gem 'will_paginate', '~> 3.0.5'
 
-# Add new relic to tack app performance
-gem 'newrelic_rpm'
-
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
