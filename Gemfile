@@ -7,15 +7,20 @@ gem 'bootstrap-sass'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'
+
+# Add newrelic 
+gem 'newrelic_rpm'
+
 # Use rails_12factor as the database for Active Record
 group :production do
   gem 'pg'
   gem 'rails_12factor'
-  gem 'newrelic_rpm'
+  gem 'puma'
 end
 
 group :development do
   gem 'sqlite3'
+  gem 'puma'
 end
 
 # Use SCSS for stylesheets
