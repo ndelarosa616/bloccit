@@ -69,6 +69,9 @@ gem 'will_paginate', '~> 3.0.5'
 # gem 'capistrano-rails', group: :development
 
 group :development, :test do
+  # Add Capybara for testing 
+  gem 'capybara'
+
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
 
