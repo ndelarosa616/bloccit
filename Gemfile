@@ -69,6 +69,9 @@ gem 'will_paginate', '~> 3.0.5'
 # gem 'capistrano-rails', group: :development
 
 group :development, :test do
+  # Add Factory_girl for factory
+  gem 'factory_girl_rails'
+
   # Add Capybara for testing 
   gem 'capybara'
 

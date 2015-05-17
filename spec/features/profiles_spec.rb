@@ -31,8 +31,9 @@ describe "Visiting profiles" do
       @user = FactoryGirl.create(:user)
       user.confirmed_at = Time.now
       user.save
-      Warden.test_reset!
       login_as(user, :scope => :user)
+      Warden.test_reset!
+
 
     it "shows profile" do 
       visit user_path(@user)
