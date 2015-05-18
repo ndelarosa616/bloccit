@@ -38,11 +38,8 @@
     <div class='js-comments'>
       <%= render partial: 'comments/comment', collection: @comments %>
     </div>
-  </div>
     <div class='new-comment'>
-      <% if policy(@comments).create? %>
-        <%= render 'comments/form', :comment => @comment %>   
-      <% end %> 
+      <%= render 'comments/form' %>
     </div>
   </div>
 </div>
