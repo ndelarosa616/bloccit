@@ -25,7 +25,7 @@ describe Topic do
       end
 
       it "returns only public specs if user is nil" do
-        expect(Topic.visible_to(nil)).should_not eq(Topic.all)
+        expect(Topic.visible_to(nil)).to eq(Topic.publicly_viewable)
       end
     end
   end
