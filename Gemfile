@@ -7,14 +7,20 @@ gem 'bootstrap-sass'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'
+
+# Add newrelic 
+gem 'newrelic_rpm'
+
 # Use rails_12factor as the database for Active Record
 group :production do
   gem 'pg'
   gem 'rails_12factor'
+  gem 'puma'
 end
 
 group :development do
   gem 'sqlite3'
+  gem 'puma'
 end
 
 # Use SCSS for stylesheets
@@ -57,7 +63,6 @@ gem 'fog'
 
 # Add will_paginate to handle pages in topics and posts
 gem 'will_paginate', '~> 3.0.5'
-
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
